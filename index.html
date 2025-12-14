@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvaro Eugenio | Developer Portfolio</title>
+
+    <meta name="description" content="Portafolio de desarrollador junior especializado en Java y PHP">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="developer-card">
+        <div class="language-switch">
+            <button onclick="setLanguage('es')">ES</button>
+            <button onclick="setLanguage('en')">EN</button>
+
+
+        </div>
+
+        <div class="card-content">
+
+            <div class="profile">
+                <img src="img/profile.png" alt="Foto de Álvaro Eugenio" class="profile-img">
+            </div>
+
+            <h1>Álvaro Eugenio</h1>
+            <h2 data-i18n="role">Junior Software Developer</h2>
+
+            <p class="intro" data-i18n="intro">
+                Desarrollador junior con experiencia en Java y PHP.
+                Interesado en backend, programación orientada a objetos
+                y bases de datos.
+            </p>
+
+            <div class="card-buttons">
+                <a href="https://github.com/AEG09" target="_blank" class="btn-github">
+                    <i class="devicon-github-original"></i> GitHub
+                </a>
+                <a id="linkedin-link" href="https://www.linkedin.com/in/%C3%A1lvaro-e-420940136/" target="_blank"
+                    class="btn-linkedin">
+                    <i class="devicon-linkedin-plain"></i> LinkedIn
+                </a>
+                <div class="contact-wrapper">
+                    <button id="contact-btn" class="btn-contact">
+                        <i class="fa-solid fa-address-book"></i> Contacto
+                    </button>
+                    <div id="contact-menu" class="contact-menu hidden">
+                        <a href="tel:+34628493932" class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="contact-details">
+                                <span class="contact-number">+34 628-493-932</span>
+                            </div>
+                        </a>
+                        <a href="mailto:alvaroeuggar@gmail.com" class="contact-item">
+                            <i class="fa-solid fa-at"></i> alvaroeuggar@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <a href="CV Álvaro Eugenio.pdf" download class="btn-cv">
+                    <i class="fa-solid fa-file-pdf"></i> CV
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ================= TECNOLOGÍAS ================= -->
+    <section class="technologies">
+        <h3 data-i18n="technologies">Tecnologías</h3>
+
+        <ul class="tech-list">
+            <li>
+                <i class="devicon-java-plain"></i> Java
+                <div class="tooltip">
+                    <span class="tooltip-text" data-i18n="levelIntermediate">Nivel: Medio</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i class="devicon-javascript-plain"></i> JavaScript
+                <div class="tooltip">
+                    <span class="tooltip-text" data-i18n="levelBasic">Nivel: Básico</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i class="devicon-mysql-plain"></i> MySQL
+                <div class="tooltip">
+                    <span class="tooltip-text" data-i18n="levelIntermediate">Nivel: Medio</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i class="devicon-html5-plain"></i> HTML
+                <div class="tooltip">
+                    <span class="tooltip-text" data-i18n="levelIntermediate">Nivel: Medio</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i class="devicon-css3-plain"></i> CSS
+                <div class="tooltip">
+                    <span class="tooltip-text" data-i18n="levelIntermediate">Nivel: Medio</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i class="devicon-git-plain"></i> Git
+                <div class="tooltip">
+                    <span class="tooltip-text" data-i18n="levelIntermediate">Nivel: Medio</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="projects">
+        <h3 data-i18n="projects">Proyectos</h3>
+
+        <!-- WEB SECTION -->
+        <div class="project-category">
+            <h4 data-i18n="catWeb">WEB</h4>
+            <div class="projects-grid">
+                <!-- WEB PROJECTS -->
+                <article class="project">
+                    <h4>Galaga</h4>
+                    <!-- Link wrapping the video -->
+                    <a href="https://github.com/AEG09/Galaga" target="_blank" class="project-video-link">
+                        <video src="Galaga-demo.mp4" autoplay loop muted playsinline class="project-video"></video>
+                    </a>
+                    <p class="project-tech">JavaScript · HTML5</p>
+                    <a href="https://github.com/AEG09/Galaga" target="_blank">Ver en GitHub</a>
+                </article>
+            </div>
+        </div>
+
+        <!-- JAVA SECTION -->
+        <div class="project-category">
+            <h4 data-i18n="catJava">Java</h4>
+            <div class="projects-grid">
+                <article class="project">
+                    <h4>Creador de Notas</h4>
+                    <p>
+                        Aplicación de escritorio en Java con interfaz Swing
+                        que permite crear, editar, eliminar y buscar notas.
+                    </p>
+                    <p class="project-tech">Java · Swing</p>
+                    <a href="https://github.com/AEG09/Creador-de-Notas-con-Gesti-n-de-Usuarios" target="_blank">Ver en
+                        GitHub</a>
+                </article>
+
+                <article class="project">
+                    <h4>Sistema de Personajes</h4>
+                    <p>
+                        Sistema de personajes de videojuego orientado a objetos.
+                    </p>
+                    <p class="project-tech">Java · POO</p>
+                    <a href="https://github.com/AEG09/Sistema-de-personajes-de-videojuego-Objetivo" target="_blank">Ver
+                        en GitHub</a>
+                </article>
+            </div>
+        </div>
+
+        <!-- MOBILE SECTION -->
+        <div class="project-category">
+            <h4 data-i18n="catMobile">Móvil</h4>
+            <div class="projects-grid">
+                <!-- Place Mobile Projects Here -->
+                <article class="project">
+                    <h4>Task List</h4>
+                    <a href="#" class="project-video-link mobile-view">
+                        <video src="Tasklist-demo.mp4" autoplay loop muted playsinline class="project-video"></video>
+                    </a>
+                    <p class="project-tech">Android · Kotlin</p>
+                    <a href="#" target="_blank">Ver en GitHub</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SOBRE MÍ ================= -->
+    <section class="about">
+        <h3 data-i18n="about">Sobre mí</h3>
+
+        <p data-i18n="aboutText">
+            Soy desarrollador junior con formación en programación
+            y experiencia en proyectos académicos. Me interesa
+            especialmente el desarrollo backend y seguir aprendiendo
+            buenas prácticas de desarrollo de software.
+        </p>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2025 Álvaro Eugenio</p>
+        <p>
+            <a href="mailto:alvaroeuggar@gmail.com">alvaroeuggar@gmail.com</a>
+        </p>
+    </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>
